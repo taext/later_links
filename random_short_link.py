@@ -20,7 +20,7 @@ def get_rand_char():
     return random_character
 
 def main(count=1, bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_urls=False, qrcode=False):
-    """Returns random bitly, tinycc, tinyurl, isgd or soogd URL(s)."""
+    """Returns random bitly, tinycc, tinyurl, isgd or soogd URL(s), optionally writes qrcode image file(s)."""
     
     characterDict = build_dict()
 
