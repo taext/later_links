@@ -2,6 +2,7 @@ import random, string, types, sh, qrcode, re, uuid, sys
 import combine_images
 
 def build_dict():
+    """Builds character set (internal method)"""
     characterDict = {}
 
     for i, character in enumerate(string.ascii_lowercase):
@@ -19,56 +20,80 @@ def get_rand_char():
     random_character = random.randint(0,len(characterDict)-1)
     return random_character
 
-def main(count=1, bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_urls=False, qrcode=False):
+def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_urls=False, count=1, qrcode_also=False, write_qrcode=False, long_hash=False):
     """Returns random bitly, tinycc, tinyurl, isgd or soogd URL(s), optionally writes qrcode image file(s)."""
     
     characterDict = build_dict()
 
     result = []
+    qrcodes = []
     if bitly or all_urls:
-        for i in range(0, int(count)):
+        for i in range(0, count):
             start_url = 'https://bit.ly/'
-            for i in range(0,7):
+                length = 7
+                if long_hash:
+                    length += 5
+            for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
             result.append(start_url)
     if tinycc or all_urls:
         for i in range(0, count):
             start_url = 'https://tiny.cc/'
-            for i in range(0,6):
+                length = 6
+                if long_hash:
+                    length += 4
+            for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
             result.append(start_url)
     if tinyurl or all_urls:
         for i in range(0, count):
             start_url = 'https://tinyurl.com/'
-            for i in range(0,8):
+                length = 8
+                if long_hash:
+                    length += 5
+            for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
             result.append(start_url)
     if isgd or all_urls:
         for i in range(0, count):
             start_url = 'https://is.gd/'
-            for i in range(0,6):
+                length = 6
+                if long_hash:
+                    length += 4
+            for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
             result.append(start_url)
     if soogd or all_urls:
         for i in range(0, count):
             start_url = 'https://soo.gd/'
-            for i in range(0,4):
+                length = 4
+                if long_hash:
+                    length += 4
+            for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
             result.append(start_url)
 
-    if qrcode:
+    if qrcode_also:
+        for item in result:
+            uid = uuid.uuid4()
+            randStr = uid.hex[:4]
+            img = qrcode.make(item)
+            qrcodes.append(img)
+
+
+    if write_qrcode:
         for item in result:
             py_write_qr(item)
 
-    return(result)
+    return(result, qrcodes)
 
-def cli_print(qrcode=True, count=5):
-    result = main(bitly=True, qrcode=qrcode, count=count)
+def cli_print(write_qrcode=True, count=5):
+    result = main(bitly=True, write_qrcode=write_qrcode, count=count)
     for item in result:
         print(item)
 
@@ -85,7 +110,7 @@ def py_write_qr(image_name):
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        cli_print(count=sys.argv[1])
+        cli_print(count=int(sys.argv[1]))
     else:
         cli_print()
     
