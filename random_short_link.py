@@ -30,9 +30,9 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     if bitly or all_urls:
         for i in range(0, count):
             start_url = 'https://bit.ly/'
-                length = 7
-                if long_hash:
-                    length += 5
+            length = 7
+            if long_hash:
+                length += 5
             for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
@@ -40,9 +40,9 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     if tinycc or all_urls:
         for i in range(0, count):
             start_url = 'https://tiny.cc/'
-                length = 6
-                if long_hash:
-                    length += 4
+            length = 6
+            if long_hash:
+                length += 4
             for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
@@ -50,9 +50,9 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     if tinyurl or all_urls:
         for i in range(0, count):
             start_url = 'https://tinyurl.com/'
-                length = 8
-                if long_hash:
-                    length += 5
+            length = 8
+            if long_hash:
+                length += 5
             for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
@@ -60,9 +60,9 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     if isgd or all_urls:
         for i in range(0, count):
             start_url = 'https://is.gd/'
-                length = 6
-                if long_hash:
-                    length += 4
+            length = 6
+            if long_hash:
+                length += 4
             for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
@@ -70,9 +70,9 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     if soogd or all_urls:
         for i in range(0, count):
             start_url = 'https://soo.gd/'
-                length = 4
-                if long_hash:
-                    length += 4
+            length = 4
+            if long_hash:
+                length += 4
             for i in range(0,length):
                 random_char = characterDict[get_rand_char()]
                 start_url += str(random_char)
@@ -93,7 +93,7 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
     return(result, qrcodes)
 
 def cli_print(write_qrcode=True, count=5):
-    result = main(bitly=True, write_qrcode=write_qrcode, count=count)
+    result = main(bitly=True, write_qrcode=write_qrcode, count=count, long_hash=True)
     for item in result:
         print(item)
 
