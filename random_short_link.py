@@ -1,5 +1,13 @@
+"""Create random link shortener URLs. Use long_hash=True to avoid collisions."""
 import random, string, types, sh, qrcode, re, uuid, sys
 import combine_images
+
+
+date = "2019/09/14"
+version_number = 'v0.1.2'
+author = "https://github.com/taext"
+feedback_welcome = "gh@v1d.dk"
+
 
 def build_dict():
     """Builds character set (internal method)"""
@@ -107,6 +115,7 @@ def py_write_qr(image_name):
     img.save(str(filename))
     
     combine_images.main(filename='horizontally_combined.jpg')
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
