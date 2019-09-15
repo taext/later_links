@@ -5,9 +5,10 @@ import combine_images
 
 
 date = "2019/09/14"
-version = 'v0.1.2'
+version = 'v0.1.3'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
+whats_new = "fire CLI, rename to paper_links"
 
 def info():
     for item in [date, version, author, feedback_welcome]:
