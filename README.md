@@ -9,7 +9,9 @@ They are links that can be physically printed now and defined later *by the user
 
 Imagine a notebook that already has a qrcode on each page for you to use in your note-taking endevours.
 
-Or imagine a report that already has a qrcode for you to add a link to a ressource.
+Or a report that already has a qrcode for you to add a link to a ressource.
+
+Or a t-shirt. Or a roll of stickers.
 
 <br>
 
