@@ -52,3 +52,4 @@ Use the argument `write_qrcode=True` to write individual QR code `.png`'s and a 
     https://bit.ly/t7qKrdfqVpS5
     https://bit.ly/2VgHfwQZkCDa
 
+![qrcode](horizontally_combined.jpg)
