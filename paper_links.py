@@ -4,7 +4,7 @@ import random, string, types, sh, qrcode, re, uuid, sys, fire
 import combine_images
 
 
-date = "2019/09/14"
+date = "2019/09/15"
 version = 'v0.1.3'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
