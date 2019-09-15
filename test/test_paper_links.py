@@ -2,6 +2,9 @@ import unittest, re
 import paper_links
 
 class TestPaperLinks(unittest.TestCase):
+
+## TEST RANDOM URL FUNCTIONS
+
     def test_bitly(self):
         result = paper_links.main(bitly=True)
         self.assertEqual(result[0][:15], "https://bit.ly/")
@@ -50,3 +53,21 @@ class TestPaperLinks(unittest.TestCase):
         result = paper_links.main(bitly=True, long_hash=True)[0]
         m = re.search('bit.ly/(.{12})$', result)
         self.assertEqual(len(m.group(1)), 12)
+
+
+## TEST BUILD-IN CONSTANTS
+
+    def test_date(self):
+        self.assertEqual(len(paper_links.date), 10)
+
+    def test_version(self):
+        self.assertEqual(len(paper_links.version), 6)
+
+    def test_author(self):
+        self.assertEqual(paper_links.author, "https://github.com/taext")
+
+    def test_feedback_welcome(self):
+        self.assertEqual(paper_links.feedback_welcome, "gh@v1d.dk")
+
+    def test_whats_new(self):
+        self.assertNotEqual(len(paper_links.whats_new), 0)
