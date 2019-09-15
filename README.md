@@ -3,7 +3,7 @@ design proposal and python tooling
 
 <br>
 
-    Physical paper link functionality using QR codes and link shorteners.
+    Dynamic paper print link functionality using QR codes and link shorteners
 
 
 
