@@ -5,10 +5,10 @@ import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.3.1'
+version = 'v0.1.4'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
-whats_new = "removed unused imports"
+whats_new = "add MIT license"
 
 def info():
     for item in [date, version, author, feedback_welcome]:
