@@ -1,5 +1,4 @@
 # paper_links
-#### v0.1.6
 
 <br>
 
