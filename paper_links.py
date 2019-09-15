@@ -5,7 +5,7 @@
 
 """
 import random, string,  qrcode, re, uuid, sys, fire
-import combine_images
+from lib import combine_images
 
 
 date = "2019/09/15"
