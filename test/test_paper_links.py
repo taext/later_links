@@ -67,7 +67,7 @@ class TestPaperLinks(unittest.TestCase):
         self.assertEqual(paper_links.author, "https://github.com/taext")
 
     def test_feedback_welcome(self):
-        self.assertEqual(paper_links.feedback_welcome, "gh@v1d.dk")
+        self.assertEqual(paper_links.feedback_welcome, "paper_links@v1d.dk")
 
     def test_whats_new(self):
         self.assertNotEqual(len(paper_links.whats_new), 0)
