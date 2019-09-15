@@ -8,12 +8,12 @@ import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.5.1'
+version = 'v0.1.5.2'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
 download_url = "https://github.com/taext/paper_links/archive/v0.1.5.zip"
 documentation_url = "https://github.com/taext/paper_links/blob/master/README.md"
-whats_new = "add documentation_url"
+whats_new = "update docstring"
 
 
 def info():
