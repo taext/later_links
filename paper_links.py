@@ -2,18 +2,20 @@
     - Create random link shortener URLs
     - Use write_qrcode=True for QR code images
     - Use long_hash=True to avoid collisions
+
 """
 import random, string,  qrcode, re, uuid, sys, fire
 import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.5.3'
+version = 'v0.1.5.4'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
 download_url = "https://github.com/taext/paper_links/archive/v0.1.5.zip"
 documentation_url = "https://github.com/taext/paper_links/blob/master/README.md"
-whats_new = "add docstrings"
+license_mit = "https://github.com/taext/paper_links/blob/master/LICENSE"
+whats_new = "add license_mit"
 
 
 def info():
