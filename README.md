@@ -1,4 +1,12 @@
 # paper_links
+## a [worldboy](https://worldboy.org) whitepaper 
+(design proposal andpython tooling)
+
+<br>
+
+## Paper link functionality using QR codes and link shorteners
+
+
 
 <br>
 
@@ -14,6 +22,12 @@ Imagine a notebook that already has a qrcode on each page for you to use in your
 Or a report that already has a qrcode for you to add a link to a ressource.
 
 Or a t-shirt. Or a roll of stickers.
+
+<br>
+
+## Installation
+
+How to install paper_links in a [Google Colab](https://colab.research.google.com/drive/1CBx1kr00HKaCA3N7qzAQBDsQx2ENxPu9) notebook.
 
 <br>
 
@@ -57,3 +71,4 @@ Use the argument `write_qrcode=True` to write individual QR code `.png`'s and a 
     https://bit.ly/2VgHfwQZkCDa
 
 ![qrcode](horizontally_combined.jpg)
+
