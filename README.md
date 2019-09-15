@@ -1,6 +1,5 @@
 # paper_links
-## a [worldboy](https://worldboy.org) whitepaper 
-(design proposal andpython tooling)
+design proposal and python tooling
 
 <br>
 
