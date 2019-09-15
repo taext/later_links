@@ -1,12 +1,16 @@
 """Create random link shortener URLs. Use long_hash=True to avoid collisions."""
-import random, string, types, sh, qrcode, re, uuid, sys
+import random, string, types, sh, qrcode, re, uuid, sys, fire
 import combine_images
 
 
 date = "2019/09/14"
-version_number = 'v0.1.2'
+version = 'v0.1.2'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
+
+def info():
+    for item in [date, version, author, feedback_welcome]:
+        print(item)
 
 
 def build_dict():
@@ -28,13 +32,12 @@ def get_rand_char():
     random_character = random.randint(0,len(characterDict)-1)
     return random_character
 
-def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_urls=False, count=1, qrcode_also=False, write_qrcode=False, long_hash=False):
+def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_urls=False, count=1, write_qrcode=False, long_hash=False):
     """Returns random bitly, tinycc, tinyurl, isgd or soogd URL(s), optionally writes qrcode image file(s)."""
     
     characterDict = build_dict()
 
     result = []
-    qrcodes = []
     if bitly or all_urls:
         for i in range(0, count):
             start_url = 'https://bit.ly/'
@@ -86,19 +89,13 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
                 start_url += str(random_char)
             result.append(start_url)
 
-    if qrcode_also:
-        for item in result:
-            uid = uuid.uuid4()
-            randStr = uid.hex[:4]
-            img = qrcode.make(item)
-            qrcodes.append(img)
-
 
     if write_qrcode:
         for item in result:
             py_write_qr(item)
 
-    return(result, qrcodes)
+
+    return(result)
 
 def cli_print(write_qrcode=True, count=5):
     result = main(bitly=True, write_qrcode=write_qrcode, count=count, long_hash=True)
@@ -118,8 +115,10 @@ def py_write_qr(image_name):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        cli_print(count=int(sys.argv[1]))
-    else:
-        cli_print()
+
+    fire.Fire(main)
+    # if len(sys.argv) == 2:
+    #     cli_print(count=int(sys.argv[1]))
+    # else:
+    #     cli_print()
     
