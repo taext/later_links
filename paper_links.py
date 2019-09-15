@@ -9,13 +9,13 @@ import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.5.4'
+version = 'v0.1.5.5'
 author = "https://github.com/taext"
-feedback_welcome = "gh@v1d.dk"
+feedback_welcome = "paper_links@v1d.dk"
 download_url = "https://github.com/taext/paper_links/archive/v0.1.5.zip"
 documentation_url = "https://github.com/taext/paper_links/blob/master/README.md"
 license_mit = "https://github.com/taext/paper_links/blob/master/LICENSE"
-whats_new = "add license_mit"
+whats_new = "update feedback mail"
 
 
 def info():
