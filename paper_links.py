@@ -5,15 +5,16 @@ import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.5'
+version = 'v0.1.5.1'
 author = "https://github.com/taext"
 feedback_welcome = "gh@v1d.dk"
 download_url = "https://github.com/taext/paper_links/archive/v0.1.5.zip"
-whats_new = "add tests, add download_url"
+documentation_url = "https://github.com/taext/paper_links/blob/master/README.md"
+whats_new = "add documentation_url"
 
 
 def info():
-    for item in [date, version, author, feedback_welcome]:
+    for item in [version, date, author, feedback_welcome, documentation_url, download_url]:
         print(item)
 
 
