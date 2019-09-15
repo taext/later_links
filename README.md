@@ -42,13 +42,13 @@ Use the `--count=` argument to specify multiple results:
 
 Use the argument `--long_hash=True` to get longer URL hashes (to minimize collisions with existing URLs):
 
-    paper_links --bitly=True --long_hash=True
+    $ paper_links --bitly=True --long_hash=True
 
     https://bit.ly/ExCLy96Uqnil      # 12 digits vs. 7 digits
 
 Use the argument `write_qrcode=True` to write individual QR code `.png`'s and a horizontally combined `.jpg`:
 
-    paper_links --bitly=True --count=3 --write_qrcode=True
+    $ paper_links --bitly=True --count=3 --write_qrcode=True
 
     https://bit.ly/Cb3tHujtPcJS
     https://bit.ly/t7qKrdfqVpS5
