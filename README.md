@@ -3,7 +3,7 @@ design proposal and python tooling
 
 <br>
 
-## Paper link functionality using QR codes and link shorteners
+    Physical paper link functionality using QR codes and link shorteners.
 
 
 
