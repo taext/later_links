@@ -9,7 +9,7 @@ import combine_images
 
 
 date = "2019/09/15"
-version = 'v0.1.5.5'
+version = 'v0.1.6'
 author = "https://github.com/taext"
 feedback_welcome = "paper_links@v1d.dk"
 download_url = "https://github.com/taext/paper_links/archive/v0.1.5.zip"
