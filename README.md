@@ -1,4 +1,4 @@
-# paper_links user guide
+# paper_links
 
 **paper_links** is a Python Linux CLI which creates random link shortener URLs and optional QR codes from one or all of 6 link shortener providers.
 
