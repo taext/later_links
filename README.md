@@ -25,7 +25,7 @@ Run the script with the argument `1` to get a single bit.ly link:
 
 Specify which provider to use by setting the argument to `True`. 
 
-Options are `bitly`, `tinycc`, `tinyurl`, `isgd` and `soogd`:
+Options are `bitly`, `tinycc`, `tinyurl`, `isgd`, `soogd` and `all_urls`:
 
     $ paper_links --bitly=True --tinycc=True
 
