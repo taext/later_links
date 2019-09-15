@@ -17,12 +17,12 @@ whats_new = "update docstring"
 
 
 def info():
+    """Print meta-data."""
     for item in [version, date, author, feedback_welcome, documentation_url, download_url]:
         print(item)
 
-
 def build_dict():
-    """Builds character set (internal method)"""
+    """Builds character set (internal method)."""
     characterDict = {}
 
     for i, character in enumerate(string.ascii_lowercase):
@@ -34,6 +34,7 @@ def build_dict():
     return characterDict
 
 def get_rand_char():
+    """Returns a random character from the character set (internal method)."""
 
     characterDict = build_dict()
 
@@ -97,20 +98,15 @@ def main(bitly=False, tinycc=False, tinyurl=False, isgd=False, soogd=False, all_
                 start_url += str(random_char)
             result.append(start_url)
 
-
     if write_qrcode:
         for item in result:
             py_write_qr(item)
 
-
     return(result)
 
-def cli_print(write_qrcode=True, count=5):
-    result = main(bitly=True, write_qrcode=write_qrcode, count=count, long_hash=True)
-    for item in result:
-        print(item)
 
 def py_write_qr(image_name):
+    """Write QR code image file (internal method)."""
 
     uid = uuid.uuid4()
     randStr = uid.hex[:4]
@@ -125,8 +121,5 @@ def py_write_qr(image_name):
 if __name__ == "__main__":
 
     fire.Fire(main)
-    # if len(sys.argv) == 2:
-    #     cli_print(count=int(sys.argv[1]))
-    # else:
-    #     cli_print()
+
     
