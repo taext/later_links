@@ -1,4 +1,3 @@
-#!/home/dd/anaconda3/bin/python
 """Create random link shortener URLs. Use long_hash=True to avoid collisions."""
 import random, string,  qrcode, re, uuid, sys, fire
 import combine_images
