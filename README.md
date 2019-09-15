@@ -1,5 +1,7 @@
 # paper_links
 
+<br>
+
 **paper_links** is a Python CLI to create random (unused) link shortener URLs and QR codes from one or all of 5 link shortener providers.
 
 ## What's the idea?
