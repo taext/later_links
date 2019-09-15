@@ -1,9 +1,9 @@
-# paper_links user guide
+# paper_links
 
-**paper_links** is a Python Linux CLI which creates random link shortener URLs and optional QR codes from one or all of 6 link shortener providers.
+**paper_links** is a Python CLI to create random (unused) link shortener URLs and QR codes from one or all of 5 link shortener providers.
 
 ## What's the idea?
-The idea is that these QR codes containing unused links can be printed now and then used as links at a later time. 
+The idea is that these QR codes containing unused links can be printed now and then used as links at a later time (using the link shortener provider's, e.g. bit.ly, interface and choosing the custom link option). 
 
 They are links that can be physically printed now and defined later *by the user of the printed material*.
 
@@ -25,7 +25,7 @@ Run the script with the argument `1` to get a single bit.ly link:
 
 Specify which provider to use by setting the argument to `True`. 
 
-Options are `bitly`, `tinycc`, `tinyurl`, `isgd` and `soogd`:
+Options are `bitly`, `tinycc`, `tinyurl`, `isgd`, `soogd` and `all_urls`:
 
     $ paper_links --bitly=True --tinycc=True
 
