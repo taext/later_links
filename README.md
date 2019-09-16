@@ -7,12 +7,14 @@ UI design proposal and python tooling
 
 <br>
 
-"Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily *add clickable links*."
+"Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily *add clickable links*.
+
+Or putting a link in your YouTube video, without having to decide on the link yet, or asking anyone's permission, by printing out a QR code and putting in the frame somewhere."
 
 <br>
     
 
-later_links combines the dynamic nature of HTML links with the physical nature of printed paper material.
+later_links combines the dynamic nature of HTML links with the robustness of hard-coded media.
 
 later_links accomplishes this using QR codes and link shorteners only.
 
