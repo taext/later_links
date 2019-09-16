@@ -26,13 +26,15 @@ The idea is **producing clickable link functionality for hard-coded media**.
 
 These QR codes containing unused links can be printed now and then defined as links at a later time by
 - using the link shortener provider's own interface and 
-- choosing the custom link option ([screenshot](bitly_custom_url.png))
+- choosing the custom link option (bitly [screenshot](bitly_custom_url.png))
 
 They are clickable links that can be physically printed now and defined later *by the user of the printed material*.
 
 Imagine printer paper or a notebook that comes ready with a qrcode or two on each page for you to use, if necessary, to easily add clickable links.
 
-Or in a YouTube video, on a t-shirt, in a report, or as a roll of stickers for general use.
+Or putting a link in your YouTube video, without having to decide on the link yet, by printing out a QR code and putting in the frame somewhere.
+
+Or on a t-shirt, in a report, or as a roll of stickers for general use.
 
 <br>
 
