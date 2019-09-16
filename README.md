@@ -1,4 +1,4 @@
-# paper_links
+# later_links
 UI design proposal and python tooling
 
 <br>
@@ -12,9 +12,9 @@ UI design proposal and python tooling
 <br>
     
 
-paper_links combines the dynamic nature of HTML links with the physical nature of printed paper material.
+later_links combines the dynamic nature of HTML links with the physical nature of printed paper material.
 
-paper_links accomplishes this using QR codes and link shorteners only.
+later_links accomplishes this using QR codes and link shorteners only.
 
 Technically, it is just a Python CLI tool to create random (unused) link shortener URL QR codes.
 
@@ -36,7 +36,7 @@ Or in a YouTube video, on a t-shirt, in a report, or as a roll of stickers for g
 
 ## Installation
 
-How to install paper_links in a [Google Colab](https://colab.research.google.com/drive/1CBx1kr00HKaCA3N7qzAQBDsQx2ENxPu9) notebook.
+How to install later_links in a [Google Colab](https://colab.research.google.com/drive/1CBx1kr00HKaCA3N7qzAQBDsQx2ENxPu9) notebook.
 
 <br>
 
@@ -44,7 +44,7 @@ How to install paper_links in a [Google Colab](https://colab.research.google.com
 
 Run the script with the argument `1` to get a single bit.ly link:
 
-    $ paper_links 1
+    $ later_links 1
 
     https://bit.ly/daSjviC
 
@@ -52,14 +52,14 @@ Specify which provider to use by setting the argument to `True`.
 
 Options are `bitly`, `tinycc`, `tinyurl`, `isgd`, `soogd` and `all_urls`:
 
-    $ paper_links --bitly=True --tinycc=True
+    $ later_links --bitly=True --tinycc=True
 
     https://bit.ly/fZyHLbq
     https://tiny.cc/JSwnQq
 
 Use the `--count=` argument to specify multiple results:
 
-    $ paper_links --tinycc=True --count=3
+    $ later_links --tinycc=True --count=3
 
     https://tiny.cc/Eses2F
     https://tiny.cc/CC9ba9
@@ -67,13 +67,13 @@ Use the `--count=` argument to specify multiple results:
 
 Use the argument `--long_hash=True` to get longer URL hashes (to minimize collisions with existing URLs):
 
-    $ paper_links --bitly=True --long_hash=True
+    $ later_links --bitly=True --long_hash=True
 
     https://bit.ly/ExCLy96Uqnil      # 12 digits vs. 7 digits
 
 Use the argument `write_qrcode=True` to write individual QR code `.png`'s and a horizontally combined `.jpg`:
 
-    $ paper_links --bitly=True --count=3 --write_qrcode=True
+    $ later_links --bitly=True --count=3 --write_qrcode=True
 
     https://bit.ly/Cb3tHujtPcJS
     https://bit.ly/t7qKrdfqVpS5
