@@ -7,7 +7,7 @@ UI design proposal and python tooling
 
 <br>
 
-    "Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily add clickable links."
+"Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily *add clickable links*."
 
 <br>
     
