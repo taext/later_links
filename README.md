@@ -1,18 +1,22 @@
 # paper_links
-design proposal and python tooling
+UI design proposal and python tooling
 
 <br>
 
-    Dynamic paper print link functionality using QR codes and link shorteners
+## TL;DR - hard-coded QR codes with dynamic links
 
 
+    Physically print QR codes with links to be defined later
+    
 
-<br>
+paper_links combines the dynamic nature of HTML links with the physical nature of printed paper material.
 
-**paper_links** is a Python CLI to create random (unused) link shortener URLs and QR codes from one or all of 5 link shortener providers.
+paper_links accomplishes this using QR codes and link shorteners only.
+
+Technically, it is just a Python CLI tool to create random (unused) link shortener URL QR codes.
 
 ## What's the idea?
-The idea is that these QR codes containing unused links can be printed now and then used as links at a later time (using the link shortener provider's, e.g. bit.ly, interface and choosing the custom link option). 
+The idea is that these QR codes containing unused links can be printed now and then defined as links at a later time, using the link shortener provider's own interface and choosing the custom link option. 
 
 They are links that can be physically printed now and defined later *by the user of the printed material*.
 
