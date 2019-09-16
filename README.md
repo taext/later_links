@@ -9,7 +9,7 @@ UI design proposal and python tooling
 
 "Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily *add clickable links*.
 
-Or putting a link in your YouTube video, without having to decide on the link yet, or asking anyone's permission, by printing out a QR code and putting in the frame somewhere."
+Or putting a link in your YouTube video, without having to decide on the link yet, by printing out a QR code and putting in the frame somewhere."
 
 <br>
     
