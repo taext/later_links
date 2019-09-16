@@ -14,11 +14,11 @@ Or putting a link in your YouTube video, without having to decide on the link ye
 <br>
     
 
-later_links combines the dynamic nature of HTML links with the robustness of hard-coded media.
+**later_links** combines the dynamic nature of HTML links with the robustness of hard-coded media.
 
-later_links accomplishes this using QR codes and link shorteners only.
+**later_links** accomplishes this using QR codes and link shorteners only.
 
-Technically, it is just a Python CLI tool to create random (unused) link shortener URL QR codes.
+Technically, it is just a Python CLI tool to create random unused link shortener URL QR codes.
 
 ## What's the idea?
 
@@ -26,7 +26,7 @@ The idea is **producing clickable link functionality for hard-coded media**.
 
 These QR codes containing unused links can be printed now and then defined as links at a later time by
 - using the link shortener provider's own interface and 
-- choosing the custom link option 
+- choosing the custom link option ([screenshot](bitly_custom_url.png))
 
 They are clickable links that can be physically printed now and defined later *by the user of the printed material*.
 
