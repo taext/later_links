@@ -3,10 +3,13 @@ UI design proposal and python tooling
 
 <br>
 
-## TL;DR - hard-code QR codes with dynamic links
+## TL;DR - clickable link functionality in physical reality
 
+<br>
 
-        Physically print QR codes with links to be defined later
+    "Imagine printer papir or a notebook that comes with a couple of qrcodes on each page for you to use, if necessary, to easily add clickable links."
+
+<br>
     
 
 paper_links combines the dynamic nature of HTML links with the physical nature of printed paper material.
@@ -16,13 +19,18 @@ paper_links accomplishes this using QR codes and link shorteners only.
 Technically, it is just a Python CLI tool to create random (unused) link shortener URL QR codes.
 
 ## What's the idea?
-The idea is that these QR codes containing unused links can be printed now and then defined as links at a later time, using the link shortener provider's own interface and choosing the custom link option. 
+
+The idea is **producing clickable link functionality in physical reality**.
+
+These QR codes containing unused links can be printed now and then defined as links at a later time by
+- using the link shortener provider's own interface and 
+- choosing the custom link option 
 
 They are clickable links that can be physically printed now and defined later *by the user of the printed material*.
 
-Imagine a notebook that already has a qrcode on each page for you to use in your note-taking endevours.
+Imagine printer paper or a notebook that comes with a qrcode or two on each page for you to use, if necessary, to easily add clickable links.
 
-Or a report that already has a qrcode for you to add a link to a ressource.
+Or a form or report that already has a qrcode for you to add a link to a ressource.
 
 Or a t-shirt. Or a roll of stickers.
 
