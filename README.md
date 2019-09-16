@@ -3,7 +3,7 @@ UI design proposal and python tooling
 
 <br>
 
-## TL;DR - clickable link functionality in physical reality
+## TL;DR - clickable link functionality in hard-coded media
 
 <br>
 
@@ -20,7 +20,7 @@ Technically, it is just a Python CLI tool to create random (unused) link shorten
 
 ## What's the idea?
 
-The idea is **producing clickable link functionality in physical reality**.
+The idea is **producing clickable link functionality for hard-coded media**.
 
 These QR codes containing unused links can be printed now and then defined as links at a later time by
 - using the link shortener provider's own interface and 
@@ -28,11 +28,9 @@ These QR codes containing unused links can be printed now and then defined as li
 
 They are clickable links that can be physically printed now and defined later *by the user of the printed material*.
 
-Imagine printer paper or a notebook that comes with a qrcode or two on each page for you to use, if necessary, to easily add clickable links.
+Imagine printer paper or a notebook that comes ready with a qrcode or two on each page for you to use, if necessary, to easily add clickable links.
 
-Or a form or report that already has a qrcode for you to add a link to a ressource.
-
-Or a t-shirt. Or a roll of stickers.
+Or in a YouTube video, on a t-shirt, in a report, or as a roll of stickers for general use.
 
 <br>
 
